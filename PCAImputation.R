@@ -10,6 +10,7 @@ df1<-df[complete.cases(df),]
 
 resPPCA  <- pca(df, method="ppca", center=FALSE, nPcs=5)
 resBPCA  <- pca(df, method="bpca", center=FALSE, nPcs=5)
+resSVDI  <- pca(df, method="svdImpute", center=FALSE, nPcs=5)
 resNipals  <- pca(df, method="nipals", center=FALSE, nPcs=5)
 resNLPCA <- pca(df, method="nlpca", center=FALSE, nPcs=5, maxSteps=300)
 
